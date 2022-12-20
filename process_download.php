@@ -27,7 +27,7 @@ $pdf->Cell(10,6,'',0,1);
 
 $pdf->SetFont('Arial','',10);
 
-include 'koneksi.php';
+include 'config.php';
 $sql = $pdo->prepare("SELECT * FROM siswa");
 $sql->execute(); // Eksekusi querynya
 while($data = $sql->fetch()){
